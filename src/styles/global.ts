@@ -1,4 +1,6 @@
 import { createGlobalStyle } from  'styled-components'
+import BKG1 from '../assets/images/bkg1.svg'
+import BKG2 from '../assets/images/bkg2.svg'
 
 const GlobalStyle = createGlobalStyle`
     * {
@@ -12,8 +14,10 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background-color: #F8FDFF;
         font-family: 'Poppins', sans-serif;
+        background: url(${BKG2}) no-repeat 100%,url(${BKG1}) no-repeat 105%;
+        background-repeat: no-repeat;
+        background-color: #F8FDFF;
     }
 
     button {
